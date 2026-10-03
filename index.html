@@ -1,0 +1,1041 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Cafflune Heaven | Premium Café</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Poppins:wght@300;400;500;600&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- ================= NAVBAR ================= -->
+
+    <header class="navbar">
+
+        <div class="logo">
+            <span>☕</span>
+            Cafflune <b>Heaven</b>
+        </div>
+
+        <nav id="navMenu">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#menu">Menu</a>
+            <a href="#experience">Experience</a>
+            <a href="#gallery">Gallery</a>
+            <a href="#reviews">Reviews</a>
+            <a href="#contact">Contact</a>
+        </nav>
+
+        <a href="#booking" class="nav-btn">Book a Table</a>
+
+        <button class="menu-btn" onclick="toggleMenu()">☰</button>
+
+    </header>
+
+
+    <!-- ================= HERO ================= -->
+
+    <section class="hero" id="home">
+
+        <div class="hero-overlay"></div>
+
+        <div class="hero-content">
+
+            <p class="small-title">WELCOME TO CAFFLUNE HEAVEN</p>
+
+            <h1>
+                Where Every Sip
+                <span>Feels Like Heaven</span>
+            </h1>
+
+            <p class="hero-text">
+                Handcrafted coffee, freshly baked treats and
+                unforgettable moments — all under one roof.
+            </p>
+
+            <div class="hero-buttons">
+
+                <a href="#menu" class="btn primary-btn">
+                    Explore Menu
+                </a>
+
+                <a href="#booking" class="btn outline-btn">
+                    Book a Table
+                </a>
+
+            </div>
+
+        </div>
+
+        <div class="scroll-down">
+            ↓ Scroll to explore
+        </div>
+
+    </section>
+
+
+    <!-- ================= ABOUT ================= -->
+
+    <section class="about section" id="about">
+
+        <div class="about-image">
+
+            <img
+                src="images/10-cafe-interior.jpeg"
+                alt="Cafflune Heaven Cafe Interior">
+
+        </div>
+
+        <div class="about-content">
+
+            <p class="section-label">OUR STORY</p>
+
+            <h2>
+                More Than Just
+                <span>Coffee</span>
+            </h2>
+
+            <p>
+                At Cafflune Heaven, we believe coffee is more than
+                a beverage. It is a moment, a memory and a reason
+                to slow down.
+            </p>
+
+            <p>
+                From carefully selected coffee beans to freshly
+                prepared desserts, every detail is created with
+                passion and love.
+            </p>
+
+            <div class="about-features">
+
+                <div>
+                    <span>☕</span>
+                    <h3>Fresh Coffee</h3>
+                    <p>Premium roasted beans</p>
+                </div>
+
+                <div>
+                    <span>🥐</span>
+                    <h3>Freshly Baked</h3>
+                    <p>Made every morning</p>
+                </div>
+
+                <div>
+                    <span>❤️</span>
+                    <h3>Made With Love</h3>
+                    <p>Served with warmth</p>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= MENU ================= -->
+
+    <section class="menu section" id="menu">
+
+        <div class="section-heading">
+
+            <p class="section-label">OUR MENU</p>
+
+            <h2>
+                Crafted For Your
+                <span>Perfect Moment</span>
+            </h2>
+
+            <p>
+                Discover our selection of handcrafted drinks,
+                delicious food and irresistible desserts.
+            </p>
+
+        </div>
+
+
+        <!-- MENU FILTER -->
+
+        <div class="menu-filter">
+
+            <button
+                class="filter-btn active"
+                onclick="filterMenu('all', this)">
+                All
+            </button>
+
+            <button
+                class="filter-btn"
+                onclick="filterMenu('coffee', this)">
+                ☕ Coffee
+            </button>
+
+            <button
+                class="filter-btn"
+                onclick="filterMenu('food', this)">
+                🍕 Food
+            </button>
+
+            <button
+                class="filter-btn"
+                onclick="filterMenu('dessert', this)">
+                🍰 Desserts
+            </button>
+
+        </div>
+
+
+        <div class="cards">
+
+            <!-- ================= COFFEE 1 ================= -->
+
+            <div class="card menu-card coffee">
+
+                <div class="card-image">
+
+                    <img
+                        src="images/02-cappuccino.jpeg"
+                        alt="Classic Cappuccino">
+
+                    <span class="popular">
+                        Popular
+                    </span>
+
+                </div>
+
+                <div class="card-content">
+
+                    <h3>Classic Cappuccino</h3>
+
+                    <p>
+                        Rich espresso blended with smooth
+                        steamed milk and creamy foam.
+                    </p>
+
+                    <div class="card-bottom">
+
+                        <span class="price">₹180</span>
+
+                        <button class="order-btn">
+                            Order +
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- ================= COFFEE 2 ================= -->
+
+            <div class="card menu-card coffee">
+
+                <div class="card-image">
+
+                    <img
+                        src="images/03-latte-art.jpeg"
+                        alt="Velvet Latte">
+
+                </div>
+
+                <div class="card-content">
+
+                    <h3>Velvet Latte</h3>
+
+                    <p>
+                        Smooth espresso with silky milk
+                        and delicate latte art.
+                    </p>
+
+                    <div class="card-bottom">
+
+                        <span class="price">₹200</span>
+
+                        <button class="order-btn">
+                            Order +
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- ================= COFFEE 3 ================= -->
+
+            <div class="card menu-card coffee">
+
+                <div class="card-image">
+
+                    <img
+                        src="images/04-mocha.jpeg"
+                        alt="Chocolate Mocha">
+
+                </div>
+
+                <div class="card-content">
+
+                    <h3>Chocolate Mocha</h3>
+
+                    <p>
+                        Rich espresso combined with
+                        smooth chocolate and creamy milk.
+                    </p>
+
+                    <div class="card-bottom">
+
+                        <span class="price">₹220</span>
+
+                        <button class="order-btn">
+                            Order +
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- ================= FOOD 1 ================= -->
+
+            <div class="card menu-card food">
+
+                <div class="card-image">
+
+                    <img
+                        src="images/08-margherita-pizza.jpeg"
+                        alt="Margherita Pizza">
+
+                </div>
+
+                <div class="card-content">
+
+                    <h3>Cheesy Garden Pizza</h3>
+
+                    <p>
+                        Crispy crust topped with melted cheese
+                        and fresh ingredients.
+                    </p>
+
+                    <div class="card-bottom">
+
+                        <span class="price">₹320</span>
+
+                        <button class="order-btn">
+                            Order +
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- ================= FOOD 2 ================= -->
+
+            <div class="card menu-card food">
+
+                <div class="card-image">
+
+                    <img
+                        src="images/07-classic-burger.jpeg"
+                        alt="Classic Burger">
+
+                </div>
+
+                <div class="card-content">
+
+                    <h3>Heavenly Burger</h3>
+
+                    <p>
+                        Juicy grilled patty, fresh vegetables
+                        and our signature sauce.
+                    </p>
+
+                    <div class="card-bottom">
+
+                        <span class="price">₹280</span>
+
+                        <button class="order-btn">
+                            Order +
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- ================= FOOD 3 ================= -->
+
+            <div class="card menu-card food">
+
+                <div class="card-image">
+
+                    <img
+                        src="images/09-grilled-sandwich.jpeg"
+                        alt="Grilled Sandwich">
+
+                </div>
+
+                <div class="card-content">
+
+                    <h3>Grilled Cheese Sandwich</h3>
+
+                    <p>
+                        Crispy grilled bread filled with
+                        delicious melted cheese and vegetables.
+                    </p>
+
+                    <div class="card-bottom">
+
+                        <span class="price">₹190</span>
+
+                        <button class="order-btn">
+                            Order +
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- ================= DESSERT 1 ================= -->
+
+            <div class="card menu-card dessert">
+
+                <div class="card-image">
+
+                    <img
+                        src="images/06-chocolate-cake.jpeg"
+                        alt="Chocolate Cake">
+
+                    <span class="popular">
+                        Chef's Pick
+                    </span>
+
+                </div>
+
+                <div class="card-content">
+
+                    <h3>Chocolate Heaven</h3>
+
+                    <p>
+                        Decadent chocolate cake covered with
+                        rich chocolate ganache.
+                    </p>
+
+                    <div class="card-bottom">
+
+                        <span class="price">₹260</span>
+
+                        <button class="order-btn">
+                            Order +
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- ================= DESSERT 2 ================= -->
+
+            <div class="card menu-card dessert">
+
+                <div class="card-image">
+
+                    <img
+                        src="images/05-chocolate-brownie.jpeg"
+                        alt="Chocolate Brownie">
+
+                </div>
+
+                <div class="card-content">
+
+                    <h3>Fudge Brownie</h3>
+
+                    <p>
+                        Warm chocolate brownie served with
+                        creamy vanilla ice cream.
+                    </p>
+
+                    <div class="card-bottom">
+
+                        <span class="price">₹220</span>
+
+                        <button class="order-btn">
+                            Order +
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= CHEF SPECIAL ================= -->
+
+    <section class="chef-special">
+
+        <div class="special-image">
+
+            <img
+                src="images/06-chocolate-cake.jpeg"
+                alt="Chef Special Chocolate Cake">
+
+        </div>
+
+        <div class="special-content">
+
+            <p class="section-label">
+                CHEF'S RECOMMENDATION
+            </p>
+
+            <h2>
+                Chocolate
+                <span>Heaven</span>
+            </h2>
+
+            <p>
+                Our signature chocolate dessert is carefully
+                crafted with rich cocoa, silky cream and
+                premium chocolate.
+            </p>
+
+            <div class="special-price">
+                ₹280
+            </div>
+
+            <a href="#booking" class="btn primary-btn">
+                Try It Today
+            </a>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= WHY CHOOSE US ================= -->
+
+    <section class="why section">
+
+        <div class="section-heading">
+
+            <p class="section-label">
+                WHY CAFFLUNE
+            </p>
+
+            <h2>
+                Created With
+                <span>Passion</span>
+            </h2>
+
+        </div>
+
+
+        <div class="why-grid">
+
+            <div class="why-card">
+
+                <div class="why-icon">☕</div>
+
+                <h3>Premium Coffee</h3>
+
+                <p>
+                    Carefully selected beans roasted
+                    for the perfect flavour.
+                </p>
+
+            </div>
+
+
+            <div class="why-card">
+
+                <div class="why-icon">👨‍🍳</div>
+
+                <h3>Expertly Crafted</h3>
+
+                <p>
+                    Every dish and drink is prepared
+                    with attention to detail.
+                </p>
+
+            </div>
+
+
+            <div class="why-card">
+
+                <div class="why-icon">🌿</div>
+
+                <h3>Cozy Ambience</h3>
+
+                <p>
+                    A beautiful space designed for
+                    relaxing and connecting.
+                </p>
+
+            </div>
+
+
+            <div class="why-card">
+
+                <div class="why-icon">❤️</div>
+
+                <h3>Made With Love</h3>
+
+                <p>
+                    We put passion into everything
+                    we serve.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= EXPERIENCE ================= -->
+
+    <section class="experience section" id="experience">
+
+        <div class="experience-image">
+
+            <img
+                src="images/10-cafe-interior.jpeg"
+                alt="Cafflune Heaven Cafe Experience">
+
+        </div>
+
+        <div class="experience-content">
+
+            <p class="section-label">
+                THE EXPERIENCE
+            </p>
+
+            <h2>
+                Your Favourite
+                <span>Corner</span>
+            </h2>
+
+            <p>
+                Whether you're meeting friends, working on
+                your next big idea, enjoying a date or simply
+                taking a break — Cafflune Heaven is your place.
+            </p>
+
+            <ul>
+
+                <li>✓ Free Wi-Fi</li>
+                <li>✓ Comfortable Seating</li>
+                <li>✓ Relaxing Music</li>
+                <li>✓ Freshly Prepared Food</li>
+
+            </ul>
+
+            <a href="#booking" class="btn primary-btn">
+                Plan Your Visit
+            </a>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= GALLERY ================= -->
+
+    <section class="gallery section" id="gallery">
+
+        <div class="section-heading">
+
+            <p class="section-label">
+                OUR GALLERY
+            </p>
+
+            <h2>
+                A Glimpse Of
+                <span>Cafflune Heaven</span>
+            </h2>
+
+        </div>
+
+
+        <div class="gallery-grid">
+
+            <div class="gallery-item large">
+
+                <img
+                    src="images/10-cafe-interior.jpeg"
+                    alt="Cafe Interior">
+
+            </div>
+
+
+            <div class="gallery-item">
+
+                <img
+                    src="images/01-hero-coffee.jpeg"
+                    alt="Coffee">
+
+            </div>
+
+
+            <div class="gallery-item">
+
+                <img
+                    src="images/03-latte-art.jpeg"
+                    alt="Latte Art">
+
+            </div>
+
+
+            <div class="gallery-item">
+
+                <img
+                    src="images/08-margherita-pizza.jpeg"
+                    alt="Pizza">
+
+            </div>
+
+
+            <div class="gallery-item">
+
+                <img
+                    src="images/05-chocolate-brownie.jpeg"
+                    alt="Chocolate Brownie">
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= REVIEWS ================= -->
+
+    <section class="reviews section" id="reviews">
+
+        <div class="section-heading">
+
+            <p class="section-label">
+                CUSTOMER LOVE
+            </p>
+
+            <h2>
+                What Our Guests
+                <span>Say</span>
+            </h2>
+
+        </div>
+
+
+        <div class="review-grid">
+
+            <div class="review-card">
+
+                <div class="stars">
+                    ★★★★★
+                </div>
+
+                <p>
+                    "Amazing coffee, beautiful ambience and
+                    the perfect place to spend an evening."
+                </p>
+
+                <h4>— A Happy Guest</h4>
+
+            </div>
+
+
+            <div class="review-card">
+
+                <div class="stars">
+                    ★★★★★
+                </div>
+
+                <p>
+                    "The chocolate cake was absolutely
+                    delicious. Definitely coming back!"
+                </p>
+
+                <h4>— The Coffee Addict ☕😂</h4>
+
+            </div>
+
+
+            <div class="review-card">
+
+                <div class="stars">
+                    ★★★★★
+                </div>
+
+                <p>
+                    "Beautiful café with friendly service.
+                    Loved every moment here."
+                </p>
+
+                <h4>— Coffee Lover ☕</h4>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= BOOKING ================= -->
+
+    <section class="booking section" id="booking">
+
+        <div class="booking-content">
+
+            <p class="section-label">
+                RESERVE YOUR TABLE
+            </p>
+
+            <h2>
+                Make Your Moment
+                <span>Special</span>
+            </h2>
+
+            <p>
+                Book your table and enjoy an unforgettable
+                experience at Cafflune Heaven.
+            </p>
+
+        </div>
+
+
+        <form class="booking-form">
+
+            <input
+                type="text"
+                placeholder="Your Name"
+                required>
+
+            <input
+                type="tel"
+                placeholder="Phone Number"
+                required>
+
+            <input
+                type="date"
+                required>
+
+            <input
+                type="time"
+                required>
+
+            <select required>
+
+                <option value="">
+                    Number of Guests
+                </option>
+
+                <option>1 Guest</option>
+                <option>2 Guests</option>
+                <option>3 Guests</option>
+                <option>4 Guests</option>
+                <option>5+ Guests</option>
+
+            </select>
+
+            <textarea
+                placeholder="Special Request"
+                rows="4"></textarea>
+
+            <button
+                type="submit"
+                class="btn primary-btn">
+
+                Reserve Table
+
+            </button>
+
+        </form>
+
+    </section>
+
+
+    <!-- ================= CONTACT ================= -->
+
+    <section class="contact section" id="contact">
+
+        <div>
+
+            <p class="section-label">
+                COME SAY HELLO
+            </p>
+
+            <h2>
+                Visit
+                <span>Cafflune Heaven</span>
+            </h2>
+
+            <p>
+                Come for the coffee.
+                Stay for the experience.
+            </p>
+
+        </div>
+
+
+        <div class="contact-info">
+
+            <div>
+                <strong>📍 Location</strong>
+                <p>Virar, Maharashtra</p>
+            </div>
+
+            <div>
+                <strong>📞 Phone</strong>
+                <p>+91 XXXXX XXXXX</p>
+            </div>
+
+            <div>
+                <strong>✉️ Email</strong>
+                <p>hello@caffluneheaven.com</p>
+            </div>
+
+            <div>
+                <strong>🕐 Opening Hours</strong>
+                <p>9:00 AM — 11:00 PM</p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer>
+
+        <div class="footer-logo">
+            ☕ Cafflune <span>Heaven</span>
+        </div>
+
+        <p>
+            Crafted with passion. Served with love.
+        </p>
+
+         <!-- OWNER NAME -->
+        <p class="owner-name">
+                Owned & Managed by
+          <strong style="font-family: 'Times New Roman', Times, serif;">Shravan Santosh Tawde</strong>
+         </p>
+
+        <div class="socials">
+
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-whatsapp"></i>
+
+        </div>
+
+        <div class="footer-bottom">
+
+            © 2026 Cafflune Heaven. All Rights Reserved.
+
+        </div>
+
+    </footer>
+
+
+    <!-- ================= JAVASCRIPT ================= -->
+
+    <script>
+
+        function toggleMenu() {
+
+            document
+                .getElementById("navMenu")
+                .classList.toggle("show");
+
+        }
+
+
+        function filterMenu(category, button) {
+
+            const cards =
+                document.querySelectorAll(".menu-card");
+
+            const buttons =
+                document.querySelectorAll(".filter-btn");
+
+
+            buttons.forEach(btn => {
+                btn.classList.remove("active");
+            });
+
+            button.classList.add("active");
+
+
+            cards.forEach(card => {
+
+                if (
+                    category === "all" ||
+                    card.classList.contains(category)
+                ) {
+
+                    card.style.display = "block";
+
+                } else {
+
+                    card.style.display = "none";
+
+                }
+
+            });
+
+        }
+
+
+        document
+            .querySelector(".booking-form")
+            .addEventListener("submit", function (event) {
+
+                event.preventDefault();
+
+                alert(
+                    "Thank you! Your table reservation request has been received."
+                );
+
+                this.reset();
+
+            });
+
+    </script>
+
+</body>
+
+</html>
